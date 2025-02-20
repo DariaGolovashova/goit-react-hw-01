@@ -5,12 +5,14 @@
   padding: 10px;
   border: 2px solid black;
   border-radius: 5px;
-  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
   width: calc(100% / 5);
 }
 
 .status {
-  margin-top: 0;
+  margin-top: 0px;
+  margin-bottom: 0;
 }
 
 .online {
@@ -19,4 +21,8 @@
 
 .offline {
   color: red;
+}
+
+.text {
+  margin-bottom: 0;
 }

@@ -16,7 +16,7 @@ return (
       {
         statsArray.map(([key, value]) => ( 
         <li key={key}>
-          <span className={css.label}>{ key.charAt(0).toUpperCase() + key.slice(1)}</span>
+          <span className={css.label}>{key.charAt(0).toUpperCase() + key.slice(1)}</span>
           <span className={css.quantity}>{value}</span>
         </li>
       ))} 

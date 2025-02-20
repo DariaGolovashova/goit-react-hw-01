@@ -4,11 +4,13 @@ import { useState } from 'react'
 import './App.css'
 import Profile from '../Profile/Profile';
 import FriendList from '../FriendList/FriendList';
+import Transactions from '../TransactionHistory/TransactionHistory';
 import userData from '../../data/userData.json';
 import friends from '../../data/friends.json';
+import transactions from '../../data/transactions.json';
+import TransactionHistory from '../TransactionHistory/TransactionHistory';
 
 export default function App() {
-  const user = userData[0];
   return (
     <>
       
@@ -17,8 +19,11 @@ export default function App() {
         tag={userData.tag}
         location={userData.location}
         image={userData.avatar}
-        stats={userData.stats}/>
-      <FriendList friends={friends}/>
+        stats={userData.stats} />
+      
+      <FriendList friends={friends} />
+      
+      <TransactionHistory items={transactions} />
     </>
   ); 
 }
