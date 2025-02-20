@@ -3,7 +3,9 @@ import { useState } from 'react'
 // import viteLogo from '/vite.svg'
 import './App.css'
 import Profile from '../Profile/Profile';
-import userData from '../../userData.json';
+import FriendList from '../FriendList/FriendList';
+import userData from '../../data/userData.json';
+import friends from '../../data/friends.json';
 
 export default function App() {
   const user = userData[0];
@@ -13,10 +15,10 @@ export default function App() {
       <Profile
         name={userData.username}
         tag={userData.tag}
-      location={userData.location}
+        location={userData.location}
         image={userData.avatar}
         stats={userData.stats}/>
-      
+      <FriendList friends={friends}/>
     </>
   ); 
 }
